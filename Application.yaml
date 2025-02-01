@@ -9,7 +9,7 @@ metadata:
     argocd-image-updater.argoproj.io/web-app.update-strategy: latest
     argocd-image-updater.argoproj.io/web-app.allow-tags: regexp:^0.*
     # Specify the pull secret for the Docker registry
-    argocd-image-updater.argoproj.io/web-app.pull-secret: pullsecret:default/my-docker-secret
+    argocd-image-updater.argoproj.io/web-app.pull-secret: pullsecret:argocd/my-docker-secret
     # Write-back configuration
     argocd-image-updater.argoproj.io/write-back-method: git
     argocd-image-updater.argoproj.io/web-app.write-back-target: values.yaml
